@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.menu__upper {
+  height: 140px;
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+}
+.upper__title {
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: 500;
+  font-size: 60px;
+}
+.upper_forms {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.upper__input {
+  padding: 20px 90px;
+  width: 500px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: #222222;
+  color: whitesmoke;
+}
+.upper__input::placeholder {
+  text-align: center;
+}
+.upper__svg {
+  position: absolute;
+  left: 40px;
+  order: 1;
+}
+.upper__ico {
+  display: flex;
+  column-gap: 30px;
+}
+.ico2:hover {
+  fill: red;
+}
+.boots_container {
+  padding: 0% 8% 0% 8%;
+}
+.boots_title_con {
+  text-align: center;
+}
+.boots_title {
+  font-family: "arial";
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 3%;
+}
+.boots_img_1_con {
+  display: flex;
+  justify-content: space-around;
+  padding: 3% 0% 4% 0%;
+}
+.boots_img_2_con {
+  display: flex;
+  justify-content: space-around;
+}
+.boots_boots {
+  width: 215px;
+  height: 215px;
+  transition: 1s; /* Время эффекта */
+}
+.boots_img_3_con {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+.boots_boots:hover {
+  transform: scale(1.11);
+  border: none;
+}
+.boots_sell {
+  font-family: "poppins";
+  font-weight: 400;
+}
+.boots_cost {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(56, 40, 40);
+  margin-top: 2.5%;
+}
+.boots_boot_button {
+  height: 50px;
+  width: 170px;
+  background: rgb(244, 157, 28);
+  border: none;
+  border-radius: 100px;
+  font-family: "Lato";
+  transition: 0.7s;
+  box-shadow: 8px 8px 8px 4px rgba(34, 60, 80, 0.16);
+}
+.boots_boot_button:hover {
+  background-color: #2a9f93;
+}
+@media (max-width:990px){
+    .upper_forms{
+        display: none;
+    }
+}
+@media (max-width: 1260px) {
+  .boots_img_1_con,
+  .boots_img_2_con,
+  .boots_img_3_con {
+    flex-wrap: wrap;
+  }
+  .boots_form {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .boots_container {
+    padding: 0% 8% 0% 8%;
+  }
+}
+@media (max-width: 853px) {
+  .upper__svg {
+    display: none;
+  }
+  .product img:hover {
+    transform: scale(1);
+  }
+  .sender__brand {
+    flex-direction: column;
+  }
+}
+@media (max-width: 801px) {
+  .bottom {
+    display: none;
+  }
+  .secret-section {
+    display: block;
+  }
+}
+@media (max-width: 726px) {
+  .slide {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .menu__upper {
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 820px) {
+  .boots_form {
+    flex-wrap: wrap;
+  }
+  .boots_img_1_con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
